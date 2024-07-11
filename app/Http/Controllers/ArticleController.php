@@ -26,9 +26,9 @@ class ArticleController extends Controller
         dd( "index '$id' listeleme işlemi");
     }
 
-    public function edit(string $id)
+    public function edit(string $id = "0")
     {
-
+        return view("admin.article.edit");
     }
 
     public function update(Request $request, string $id)
@@ -38,7 +38,7 @@ class ArticleController extends Controller
 
     public function destroy(string $id)
     {
-
+        dd($id);
     }
 
 }

@@ -20,4 +20,17 @@ class UserController extends Controller
     {
         dd($request->all());
     }
+    public function show(Request $request, int $id) {
+        dd($id);
+        
+    }
+    public function showName(Request $request,  $name) {
+        dd($name);
+        
+    }
+
+    public function roleCheck($role)
+    {
+        echo "Başarılı";
+    }
 }
