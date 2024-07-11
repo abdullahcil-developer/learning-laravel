@@ -4,15 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class USerController extends Controller
+class UserController extends Controller
 {
     public function update(Request $request)
     {
-
+        dd($request->all());
     }
 
-    public function updateAll()
+    public function updateAll(Request $request)
     {
-        
+        dd($request->all());
     }
 }

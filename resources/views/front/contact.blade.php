@@ -38,7 +38,7 @@ iletişim sayfası 2
     <button class="btn btn-success" type="submit">Gönder</button>
 </form>
 <hr>
-<h1>support sayfası </h1>
+<h1>update sayfası </h1>
 <form action="{{route("user.update", ['id' => 9])}}" method="POST">
     @csrf
     @method('PATCH')

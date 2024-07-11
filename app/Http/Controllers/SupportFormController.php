@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class SupoortFormController extends Controller
+class SupportFormController extends Controller
 {
     public function support(Request $request){
         dd($request->all());
