@@ -38,7 +38,7 @@ iletişim sayfası 2
     <button class="btn btn-success" type="submit">Gönder</button>
 </form>
 <hr>
-<h1>update sayfası </h1>
+<h1>Support sayfası 1</h1>
 <form action="{{route("user.update", ['id' => 9])}}" method="POST">
     @csrf
     @method('PATCH')
@@ -47,6 +47,25 @@ iletişim sayfası 2
     <input type="email" class="form-control" name="email" >
     <br>
     <button class="btn btn-success" type="submit">Gönder</button>
+</form>
+<hr>
+<h1>Support sayfası 2</h1>
+<form action="{{route("user.updateAll", ['id' => 9])}}" method="POST">
+    @csrf
+    @method('PUT')
+    <input type="text" class="form-control" name="fullname">
+    <br>
+    <input type="email" class="form-control" name="email" >
+    <br>
+    <button class="btn btn-success" type="submit">Gönder</button>
+</form>
+<hr>
+<h1>Delete kullanımı</h1>
+<form action="{{route("user.delete", ['id' => 9])}}" method="POST">
+    @csrf
+    @method('DELETE')
+   
+    <button class="btn btn-success" type="submit">Sil</button>
 </form>
 <hr>
 @endsection

@@ -28,5 +28,9 @@ Route::post("/user/{id}/{name?}", "ContactController@user")
 
 Route::post("/support-form", "SupportFormController@support")->name("support-form.supoort");
 
-Route::patch("/users/{id}/guncelle","USerController@update")->name("user.update");
-Route::put("/users/{id}/tumunu-guncelle", "USerController@updateAll")->name("user.updateAll");
+Route::patch("/users/{id}/guncelle","UserController@update")->name("user.update");
+Route::put("/users/{id}/tumunu-guncelle", "UserController@updateAll")->name("user.updateAll");
+
+Route::delete("/user/{id}/delete", "UserController@delete")->name("user.delete");
+
+Route::resource('article', 'ArticleController');

@@ -15,4 +15,9 @@ class UserController extends Controller
     {
         dd($request->all());
     }
+
+    public function delete(Request $request)
+    {
+        dd($request->all());
+    }
 }
