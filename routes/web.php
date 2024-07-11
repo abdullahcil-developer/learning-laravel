@@ -27,3 +27,6 @@ Route::post("/user/{id}/{name?}", "ContactController@user")
 ->where(["id" => "[0-9]+", "name" =>"[a-z]+"]);
 
 Route::post("/support-form", "SupportFormController@support")->name("support-form.supoort");
+
+Route::patch("/users/{id}/guncelle","USerController@update")->name("user.update");
+Route::put("/users/{id}/tumunu-guncelle", "USerController@updateAll")->name("user.updateAll");

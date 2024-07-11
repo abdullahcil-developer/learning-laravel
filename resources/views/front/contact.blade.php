@@ -38,6 +38,17 @@ iletişim sayfası 2
     <button class="btn btn-success" type="submit">Gönder</button>
 </form>
 <hr>
+<h1>support sayfası </h1>
+<form action="{{route("user.update", ['id' => 9])}}" method="POST">
+    @csrf
+    @method('PATCH')
+    <input type="text" class="form-control" name="fullname">
+    <br>
+    <input type="email" class="form-control" name="email" >
+    <br>
+    <button class="btn btn-success" type="submit">Gönder</button>
+</form>
+<hr>
 @endsection
 
 @section("js")
