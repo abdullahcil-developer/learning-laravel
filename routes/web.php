@@ -14,7 +14,6 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
 Route::get('/', "HomeController@index")->name("home");
 
 Route::get('/about', "HomeController@about")->name("about");
@@ -36,7 +35,7 @@ Route::delete("/user/{id}/delete", "UserController@delete")->name("user.delete")
 
 Route::resource('article', 'ArticleController');
 
-Route::apiResource("/api/article", "Api/ArticleController");
+//Route::apiResource("/api/article", "Api/ArticleController");
 
 Route::get('/users/{id}', "UserController@show")
 ->name("user.show")
