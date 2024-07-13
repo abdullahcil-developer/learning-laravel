@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Makale Düzenleme</h1>
+    <h1>Makale Düzenleme </h1>
     <hr>
     <a href="{{ route("admin.articleDestroy", ['id' => 16])}}">Makale Sil</a>
 </body>
